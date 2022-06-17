@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1200px;
+    font-family: sans-serif;
+    color: #5D6063;
+}
+
+
+.page{
+    width: 900px;
+    box-sizing: border-box;
+    margin: 20px auto; /* Vertical  Horizontal */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-header{
+    width: 100%;
+    display: flex;
+}
+
+
+article{
+    width: 70%;
+    justify-content: flex-start;
+    height: 500px;
+}
+
+.sidebar{
+    justify-content: flex-end;
+}
+
+section, article, aside, footer, header, nav {
+    display: block;
+  }
+/*   This makes the new semantic elements behave like <div> elements (which are block boxes, not inline boxes) in legacy browsers. */

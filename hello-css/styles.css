@@ -1,0 +1,43 @@
+body {
+    color: #414141;               /* Dark gray */
+    background-color: #EEEEEE;    /* Light gray */
+    font-size: 18px;
+}
+  
+h1 , h2 {
+    font-size: 2em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+}
+  
+h2 {
+    font-size: 1.6em;
+}
+
+ul {
+    list-style-type: circle;
+  }
+  
+ol {
+    list-style-type: lower-roman;
+  }
+  
+a {
+      /* text-decoration: none; */
+      color: blue;
+  }
+
+p{
+    text-align: left;
+}
+
+/* (You probably shouldn't do this) */
+/* em {
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  strong {
+    font-weight: normal;
+    font-style: italic;
+  } */

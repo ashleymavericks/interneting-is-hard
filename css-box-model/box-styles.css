@@ -1,0 +1,65 @@
+* {    /* universal CSS selector */
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;  /* best practice. */
+}
+
+h1, p {
+    background-color: #DDE0E3;    /* Light gray */
+  }
+em, strong {
+    background-color: #B2D6FF;    /* Light blue */
+    display: inline; /* change box type inline-block */
+  }
+
+  h1 {
+    padding: 50px;
+    /* border: 1px solid #5D6063; */
+  }
+
+  p {
+    padding: 20px 0px 20px 10px;  /* Top  Right  Bottom  Left */
+    margin-bottom: 50px;          /* also accepts the same shorthand formats as padding. */
+    margin-top: 25px; /* VERTICAL MARGIN COLLAPSE - the smaller top margin collapses into the bigger bottom one. */
+}
+
+ div {
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+    width: 200px;
+    /* overflow: auto; */ /*  when an element's content is too big to fit in its block formatting context */
+    box-sizing: border-box; /* 200px—including padding and borders */
+    /* box-sizing: content-box; */ /* actual width will be 244px */
+    margin: 20px auto; /* Vertical  Horizontal */
+}
+
+body {
+    text-align: center;
+  }
+
+
+
+
+/* p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } */
+
+/*   p {
+    padding: 20px 10px;  /* Vertical  Horizontal 
+  }
+ */
+
+/* strong {
+    margin: 50px;
+    padding: 50px;
+  } */
+
+

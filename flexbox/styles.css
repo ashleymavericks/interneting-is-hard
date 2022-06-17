@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container{
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  /* border: 1px solid #fff; */  /* For debugging */
+
+/*   .links {
+    display: flex;
+    justify-content: flex-end;
+  } */
+
+  .signup {   /* auto margins */
+    margin-left: auto;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+
+/*   Since .header has an explicit height, 
+items can be positioned vertically inside of it.
+The official specification calls this “cross-axis” alignment */
+
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+/* .social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+} */
+
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    align-items: center;
+  }
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    
+  }
+
+/*   Unlike setting row-reverse and column-reverse on a flex 
+  container, order works across row/column boundaries. */
+
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+
+  .social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
+
+
+/* Use display: flex; to create a flex container.
+Use justify-content to define the horizontal alignment of items.
+Use align-items to define the vertical alignment of items.
+Use flex-direction if you need columns instead of rows.
+Use the row-reverse or column-reverse values to flip item order.
+Use order to customize the order of individual elements.
+Use align-self to vertically align individual items.
+Use flex to create flexible boxes that can stretch and shrink. */

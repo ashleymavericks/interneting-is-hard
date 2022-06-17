@@ -1,0 +1,146 @@
+
+/* body{
+  background-color: blueviolet;
+} */
+.page {
+  width: 600px;
+  margin: 0 auto;
+    }
+    
+    .button:link,                
+    .button:visited {            
+      display: block;             
+    text-decoration: none;      
+    color: #FFF;
+    background-color: #5995DA;    /* Blue */
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;    /* Dark gray */
+    border-radius: 5px;
+    
+    width: 200px;
+    margin: 30px auto;
+    
+  }
+  
+  .button:hover,
+  .button:visited:hover {
+    color: #FFF;
+    background-color: #76AEED;  /* Light blue */
+  }
+  
+  .button:active,
+  .button:visited:active {
+    color: #FFF;
+    background-color: #5995DA;  /* Blue */
+  }
+
+  #button2 {
+    background-color: #D55C5F;    /* Red */
+  }
+
+  
+  .call-to-action:link,
+  .call-to-action:visited {
+    font-style: italic;
+    background-color: #EEB75A;     /* Yellow */
+  }
+  /* .call-to-action:link,
+  .call-to-action:visited {
+    background-color: #D55C5F;    /* Red */
+    
+  } */
+  .call-to-action:hover,
+  .call-to-action:visited:hover {
+    background-color: #F5CF8E;     /* Light yellow */
+  }
+  
+  .call-to-action:active,
+  .call-to-action:visited:active {
+    background-color: #EEB75A;     /* Yellow */
+  }
+  
+  
+  /* .synopsis em {
+    font-style: normal;
+  }
+  */
+  
+  .synopsis em {
+    color: aqua; /* to differentiate between child and descendant selectors */
+  }
+  
+  a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  a:visited {
+    color: purple;
+  }
+  a:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+  a:active {
+    color: red;
+  }
+  
+  a:visited:hover {  /*  stringing pseudo-classes together */
+    color: orange;
+  }
+  
+  a:visited:active {
+    color: red;
+  }
+  
+  
+  /* .article h2 .subheading em  {
+    color: red;
+    background-color: blue;
+  } */
+
+
+/*    pseudo-classes for structure --> the pseudo-class method lets us style specific 
+elements without having to alter the HTML at al
+
+ /* The :first-of-type and :last-of-type selectors only operate inside their parent 
+ element. That is to say, p:first-of-type selects the first <p> in every container element. */
+  
+/*   p:last-of-type {
+    margin-bottom: 50px;
+  } */
+  
+/*   .synopsis {     
+      color: #7E8184;        
+      font-style: italic;
+    } */
+
+/*     p:first-of-type {
+      color: #7E8184;
+      font-style: italic;
+    } */
+
+
+.page > p:first-of-type {
+  
+  color: #7E8184; /* using child selectors to limit the scope */
+  font-style: italic;
+}
+
+.page > p:last-of-type{
+  margin-bottom: 50px;
+}
+
+/* id attributes need to be unique 
+because they serve as the target for “URL fragments”
+Fragments are how you point the user to a specific part of a web page.  */
+
+
+#button2{
+  color: #5D6063;  /* Dark gray */
+
+}
+
+
+  
